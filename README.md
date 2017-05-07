@@ -1,6 +1,7 @@
 # README
 
 Static pages created with Ruby on Rails.
+
 Contains:
 -------
 * Home
