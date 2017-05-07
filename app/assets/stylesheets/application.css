@@ -104,4 +104,14 @@ h2 {
 }
 .imag{
   border-radius: 10%;
+  margin-top: 10px;
+}
+.bottom-bar {
+  position:relative;
+  text-align:center;
+  font-size:.8em;
+  text-transform:uppercase;
+  background:#382428;
+  padding:15px 0;
+  margin-top:0px;
 }
