@@ -4,11 +4,23 @@
     <title><%= yield(:title)%></title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"<%= @homeactive%>><%= link_to "Home", home_path%></a></li>
+            <li role="presentation" <%= @bandactive%>><%=link_to "Favorite Band",band_path%></li>
+            <li role="presentation"<%= @sportactive%>><%=link_to "Favorite Sport", sport_path%></li>
+            <li role="presentation"<%= @aboutactive%>><%=link_to "About Me", about_path%></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Static Page Ruby on Rails</h3>
+      </div>
     <%= yield %>
   </body>
 </html>
